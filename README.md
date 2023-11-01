@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-### Usage:
 
+![Screenshot_20231101_185305](https://github.com/mrArpanM/next-starter-basic/assets/96872138/b10000eb-7438-4506-9d68-8318bd87b119)
+
+### Usage: 
 ```bash
 pnpx create-next-app -e https://github.com/mrArpanM/next-starter-basic
 ```
@@ -33,7 +35,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - [shadcn UI](https://ui.shadcn.com/) Components
 - Icons from [Lucide](https://lucide.dev)
 - Dark mode with `next-themes`
-- Custom fonts with `next-font`
+- Custom fonts
 
 ## Learn More
 
@@ -51,13 +53,11 @@ import { notify } from '@/components/hooks/notify'
 
 // ...
 
-function App() {
+function NotifyMe() {
   return (
-    <div>
-      <button onClick={() => notify("Notification Title", "This is Notification Body")}>
-        Give me a notification
-      </button>
-    </div>
+    <button onClick={() => notify("Notification Title", "This is Notification Body")}>
+      Give me a notification
+    </button>
   );
 }
 ```
